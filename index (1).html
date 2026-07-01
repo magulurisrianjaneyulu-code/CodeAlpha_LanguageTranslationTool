@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeAlpha - Language Translator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Language Translator</h2>
+        
+        <div class="wrapper">
+            <div class="text-input">
+                <textarea class="from-text" placeholder="Enter text to translate..."></textarea>
+                <textarea class="to-text" placeholder="Translation will appear here..." readonly></textarea>
+            </div>
+            
+            <ul class="controls">
+                <li class="row from">
+                    <div class="icons">
+                        <i id="from-speech" class="fas fa-volume-up" title="Listen"></i>
+                        <i id="from-copy" class="fas fa-copy" title="Copy Text"></i>
+                    </div>
+                    <select id="from-lang"></select>
+                </li>
+                
+                <li class="exchange"><i class="fas fa-exchange-alt"></i></li>
+                
+                <li class="row to">
+                    <select id="to-lang"></select>
+                    <div class="icons">
+                        <i id="to-copy" class="fas fa-copy" title="Copy Translation"></i>
+                        <i id="to-speech" class="fas fa-volume-up" title="Listen"></i>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        
+        <button id="translate-btn">Translate Text</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
